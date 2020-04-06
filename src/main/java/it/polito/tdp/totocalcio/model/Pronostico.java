@@ -3,6 +3,7 @@ package it.polito.tdp.totocalcio.model;
 import java.util.ArrayList;
 import java.util.List;
 
+//Lista dei pronostici della partita
 public class Pronostico {
 	private List<PronosticoPartita> pronostici = new ArrayList<>() ;
 	

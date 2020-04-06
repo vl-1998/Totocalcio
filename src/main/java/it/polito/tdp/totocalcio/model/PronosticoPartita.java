@@ -3,6 +3,7 @@ package it.polito.tdp.totocalcio.model;
 import java.util.HashSet;
 import java.util.Set;
 
+//Classe che contiene un insieme di RisultatoPartita. Sono i risultati possibili di quel pronostico della singola partita
 public class PronosticoPartita {
 	private Set<RisultatoPartita> risultati = new HashSet<>();
 	

@@ -12,12 +12,17 @@ import java.util.List;
  */
 public class Risultato {
 
-	private List<RisultatoPartita> risultati = new ArrayList<>();
+	private List<RisultatoPartita> risultati = new ArrayList<>(); //Il risultato e' un array list dei risultati delle partite
 
 	public Risultato(String colonna) {
 		for (int i = 0; i < colonna.length(); i++) {
 			risultati.add(RisultatoPartita.valueOf(colonna.charAt(i)));
 		}
+	}
+	
+	//Altro costruttore che parte da una lista di RisultatoPartita
+	public Risultato (List <RisultatoPartita> lista) {
+		risultati.addAll(lista);
 	}
 	
 	public String toString() {
